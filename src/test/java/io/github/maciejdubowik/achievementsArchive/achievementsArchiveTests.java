@@ -1,10 +1,10 @@
-package io.github.maciejdubowik.projectGym;
+package io.github.maciejdubowik.achievementsArchive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProjectGymApplicationTests {
+class achievementsArchiveTests {
 
 	@Test
 	void contextLoads() {
