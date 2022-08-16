@@ -23,6 +23,16 @@ public class Achievement {
     @Column(name = "category")
     private String category;
 
+    public Achievement() {
+    }
+
+    public Achievement(Date date, String name, String info, String category) {
+        this.date = date;
+        this.name = name;
+        this.info = info;
+        this.category = category;
+    }
+
     public int getId() {
         return id;
     }

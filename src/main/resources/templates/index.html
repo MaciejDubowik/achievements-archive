@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<p>hello world!</p>
+<p th:text="${achievement}"></p>
+<p th:text="${name}"></p>
+<p>swaggggg</p>
+
+<form th:action="@{/index}" method="post" th:object="${achievement}">
+
+    <input id="date" type="date" class = "form-control" th:field="${achievement.date}" placeholder="date" required autofocus/>
+    <input id="name" type="text" class = "form-control" th:field="${achievement.name}" placeholder="name" required autofocus/>
+    <input id="info" type="text" class = "form-control" th:field="${achievement.info}" placeholder="information" required autofocus/>
+    <input id="category" type="text" class = "form-control" th:field="${achievement.category}" placeholder="category" required autofocus/>
+    <input type="submit" class="fadeIn fourth" name="login-submit" id="login-submit" value="Dodaj" />
+</form>
+
+</body>
+</html>
